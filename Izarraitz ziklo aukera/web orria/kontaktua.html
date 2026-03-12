@@ -8,23 +8,21 @@
 </head>
 <body>
     <style>
-        body 
-        {
+        body {
             background-color: #d4dcb2;
         }
-        .card 
-        {
+        .card {
             margin-top: 20px;
         }
-        .nav-link{
-                color: #ffffff !important;       /* zure kolore desiratua, adib. zuria */
-                text-decoration: none !important;  /* underline kentzen du */
-                         }
+        .nav-link {
+            color: #ffffff !important;
+            text-decoration: none !important;
+        }
         .nav-link.active {
-                color: #ff6b6b !important;         /* zure kolore desiratua, adib. gorria */
-                text-decoration: none !important;  /* underline kentzen du active-n ere */
-                font-weight: bold;
-                         }
+            color: #ff6b6b !important;
+            text-decoration: none !important;
+            font-weight: bold;
+        }
     </style>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -44,78 +42,80 @@
             </div>
         </div>
     </nav>
-
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-8">
-                <!--DATUAK=>-->
-				 
-				  <form action="https://formsubmit.co/betxeberria24@izarraitz.eus" method="POST">
-				  <div class="mb-3">
-					<label for="nombre" class="form-label">Izen-abizenak</label>
-					<input type="text" class="form-control" id="nombre" name="Izen-abizenak" required>
-					<div class="invalid-feedback">Eremu hau bete behar da.</div>
-				  </div>
+                <!-- Formularioa Web3Forms-ekin -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="needs-validation" novalidate>
+                    
+                    <!-- Access key (zure berria) -->
+                    <input type="hidden" name="access_key" value="7b2256bc-f4a6-44a7-847f-502773920504">
+                    
+                    <!-- Emailaren gaia pertsonalizatzeko (gomendagarria) -->
+                    <input type="hidden" name="subject" value="Web orritik kontaktu berria - {{Arrazoia}}">
+                    
+                    <!-- Honeypot spam saihesteko (ez ikusten da erabiltzailearentzat) -->
+                    <input type="checkbox" name="botcheck" style="display: none;" aria-hidden="true">
+                    
+                    <!-- Bidali ondoren joateko orria (sortu eskerrik-asko.html fitxategia zure repoan) -->
+                    <!-- <input type="hidden" name="redirect" value="https://oyaunb.github.io/MARKATZE-/Izarraitz ziklo aukera/web orria/eskerrik-asko.html"> -->
+                    <!-- Goiko lerroa komentatu egin dut lehenengo probak egiteko; gero aktibatu nahi baduzu -->
 
-				  <div class="mb-3">
-					<label for="email" class="form-label">Posta elektronikoa</label>
-					<input type="email" class="form-control" id="email" name="Email" required>
-					<div class="invalid-feedback">Posta elektroniko zuzena idatzi.</div>
-				  </div>
-
-				  <div class="mb-3">
-					<label for="telefono" class="form-label">Telefonoa</label>
-					<input type="tel" class="form-control" id="telefono" name="Telefonoa">
-				  </div>
-
-				  <div class="mb-3 form-check">
-					<input type="checkbox" class="form-check-input" id="datuak" name="Baimena" value="Bai" required>
-					<label class="form-check-label" for="datuak">
-					  Nire datuak inkestetarako erabiltzeko baimena ematen dut
-					</label>
-					<div class="invalid-feedback">Baimena beharrezkoa da.</div>
-				  </div>
-
-				  <div class="mb-3">
-					<label for="arrazoia" class="form-label">Arrazoia</label>
-					<select class="form-select" id="arrazoia" name="Arrazoia" required>
-					  <option value="" selected disabled>Aukeratu arrazoia...</option>
-					  <option value="Kexa">Kexa</option>
-					  <option value="Eskaera">Eskaera</option>
-					  <option value="Informazioa">Informazioa</option>
-					  <option value="Beste bat">Beste bat</option>
-					</select>
-					<div class="invalid-feedback">Aukeratu arrazoia bat mesedez.</div>
-				  </div>
-
-				  <div class="mb-3">
-					<label for="udalerria" class="form-label">Udalerria / Probintzia</label>
-					<select class="form-select" id="udalerria" name="Udalerria" required>
-					  <option value="" selected disabled>Aukeratu...</option>
-					  <option value="Gipuzkoa">Gipuzkoa</option>
-					  <option value="Bizkaia">Bizkaia</option>
-					  <option value="Araba">Araba</option>
-					  <option value="Beste bat">Beste bat</option>
-					</select>
-					<div class="invalid-feedback">Aukeratu udalerria bat mesedez.</div>
-				  </div>
-
-				  <div class="mb-4">
-					<label for="mezua" class="form-label">Zure mezua / azalpena</label>
-					<textarea class="form-control" id="mezua" name="Mezua" rows="6" placeholder="Idatzi hemen zure mezua..." required></textarea>
-					<div class="invalid-feedback">Mezua idatzi behar duzu.</div>
-				  </div>
-
-				  <button type="submit" class="btn btn-primary">Bidali</button>
-				</form>
-                
-                   
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Izen-abizenak</label>
+                        <input type="text" class="form-control" id="nombre" name="Izen-abizenak" required>
+                        <div class="invalid-feedback">Eremu hau bete behar da.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Posta elektronikoa</label>
+                        <input type="email" class="form-control" id="email" name="Email" required>
+                        <div class="invalid-feedback">Posta elektroniko zuzena idatzi.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Telefonoa</label>
+                        <input type="tel" class="form-control" id="telefono" name="Telefonoa">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="datuak" name="Baimena" value="Bai" required>
+                        <label class="form-check-label" for="datuak">
+                            Nire datuak inkestetarako erabiltzeko baimena ematen dut
+                        </label>
+                        <div class="invalid-feedback">Baimena beharrezkoa da.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="arrazoia" class="form-label">Arrazoia</label>
+                        <select class="form-select" id="arrazoia" name="Arrazoia" required>
+                            <option value="" selected disabled>Aukeratu arrazoia...</option>
+                            <option value="Kexa">Kexa</option>
+                            <option value="Eskaera">Eskaera</option>
+                            <option value="Informazioa">Informazioa</option>
+                            <option value="Beste bat">Beste bat</option>
+                        </select>
+                        <div class="invalid-feedback">Aukeratu arrazoia bat mesedez.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="udalerria" class="form-label">Udalerria / Probintzia</label>
+                        <select class="form-select" id="udalerria" name="Udalerria" required>
+                            <option value="" selected disabled>Aukeratu...</option>
+                            <option value="Gipuzkoa">Gipuzkoa</option>
+                            <option value="Bizkaia">Bizkaia</option>
+                            <option value="Araba">Araba</option>
+                            <option value="Beste bat">Beste bat</option>
+                        </select>
+                        <div class="invalid-feedback">Aukeratu udalerria bat mesedez.</div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="mezua" class="form-label">Zure mezua / azalpena</label>
+                        <textarea class="form-control" id="mezua" name="Mezua" rows="6" placeholder="Idatzi hemen zure mezua..." required></textarea>
+                        <div class="invalid-feedback">Mezua idatzi behar duzu.</div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Bidali</button>
+                </form>
             </div>
-
         </div>
     </div>
 
-   <!-- Bootstrap erabiltzeko esteka-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
